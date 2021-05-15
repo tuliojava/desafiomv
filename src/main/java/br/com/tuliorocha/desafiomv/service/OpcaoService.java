@@ -4,13 +4,14 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import br.com.tuliorocha.desafiomv.interfaces.OpcaoImpl;
 import br.com.tuliorocha.desafiomv.model.Opcao;
 import br.com.tuliorocha.desafiomv.repository.OpcaoRepository;
 import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
-public class OpcaoService {
+public class OpcaoService implements OpcaoImpl {
 	
 	private final OpcaoRepository opcaoRepository;
 	

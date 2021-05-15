@@ -4,13 +4,14 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import br.com.tuliorocha.desafiomv.interfaces.CafeDaManhaImpl;
 import br.com.tuliorocha.desafiomv.model.CafeDaManha;
 import br.com.tuliorocha.desafiomv.repository.CafeDaManhaRepository;
 import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
-public class CafeDaManhaService {
+public class CafeDaManhaService implements CafeDaManhaImpl {
 	
 	private final CafeDaManhaRepository cafeDaManhaRepository;
 	

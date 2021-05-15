@@ -4,13 +4,14 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import br.com.tuliorocha.desafiomv.interfaces.ColaboradorImpl;
 import br.com.tuliorocha.desafiomv.model.Colaborador;
 import br.com.tuliorocha.desafiomv.repository.ColaboradorRepostory;
 import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
-public class ColaboradorService {
+public class ColaboradorService implements ColaboradorImpl {
 	
 	private final ColaboradorRepostory colaboradoRepository;
 	
